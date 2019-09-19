@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Техномарт</title>
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -63,10 +65,27 @@
 	<h1>Перфораторы </h1>
 
 	<section>
-		<form>
-			<p>Производители</p>
-
-			<p>Питание</p>
+		<form class="filtr" method="POST">
+			<p>Производители:</p>
+			<ul>
+				<li><label><input type="checkbox" id="Borch" checked>
+				Borch</label></li>
+				<li> <label><input type="checkbox" >
+				Интерсколk</label></li>
+				<li>  <label><input type="checkbox" checked >
+				Makita</label></li>
+				<li>  <label><input type="checkbox" >
+				Dewalt</label></li>
+				<li> <label><input type="checkbox">
+				Hitachi</label> </li>
+			</ul>
+			<p>Питание:</p>
+			<ul>
+				<li><label><input type="radio">
+				Акамуляторные</label></li>
+				<li><label><input type="rafio">
+				Сетевые</label></li>
+			</ul>
 			<button type="button">Показать</button>
 		</form>
 	</section>
@@ -194,7 +213,7 @@
 <footer>
 <div>
 	<a href="index.html"><img src="img/logo-technomart.svg" alt=""></a>
-	<ul>
+	<ul class="bottom_menu">
 		<li><a href="index.html">Компания</a></li>
 		<li><a href="">Новости</a></li>
 		<li><a href="catalog.html">Каталог</a></li>
@@ -202,7 +221,7 @@
 		<li><a href="">Контакты</a></li>
 	</ul>
 
-	<p>
+	<p class="bottom_adress">
 			7(812)555-05-55
 	г.Санкт-Петербург. ул.Б.Конюшная, д 19/8
 	</p>
@@ -218,16 +237,27 @@
 		&#169; 2010-2017 Компания "Техномарт"<br>
 		Все права защишены
 	</p>
-		<ul>
+	<ul class="social_menu">
 		<li><a href="#"><img src="img/icon-vk.svg" alt="VK"></a></li>
 		<li><a href="#"><img src="img/icon-fb.svg" alt="FACEBOOK"></a></li>
 		<li><a href="#"><img src="img/icon-insta.svg" alt="INSTAGRAM"></a></li>
-		</ul>
-	<ul>
+	</ul>
+	<ul class="backcall">
 		<li>Обратная связь <span>mail@htmlacademy.ru</span></li>
 		<li>Разработано <span>htmlacademy.ru</span></li>
 	</ul>
 </div>
 </footer>
+<div id="modal" class="visually-hidden">
+	<div class="ad_basket">
+		<div class="close"></div>
+		<p>Товар добавлен в корзину</p>
+		<ul>
+			<li><a href="#">Оформить заказ</a></li>
+			<li><a href="#">Продолжить покупки</a></li>
+		</ul>
+	</div>
+</div>
+
 </body>
 </html>
