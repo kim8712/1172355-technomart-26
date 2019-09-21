@@ -67,44 +67,53 @@
 
 	<section>
 		<form class="filtr" method="POST">
+			<p>Фильтр:<p>
+			Цена:
+			<input type="range" name="filtr">
+			<input type="text" name="cost1"> - <input type="text" name="cost2">
 			<p>Производители:</p>
 			<ul>
 				<li>
-					<label for="borch">Borch</label>
 					<input type="checkbox" id="borch"  name="borch" checked>
+					<label for="borch">Borch</label>
 				</li>
 				<li> 
-					<label for="interskol">Интерсколk</label>
 					<input type="checkbox" id="interskol"  name="interskol">
+					<label for="interskol">Интерсколk</label>
 				</li>
 				<li>
-					<label for="makita">Makita</label>
 					<input type="checkbox" id="makita"  name="makita">
+					<label for="makita">Makita</label>
 				</li>
 				<li>
-					<label for=dewalt">Dewalt</label>
 					<input type="checkbox" id="dewalt"  name="dewalt">
+					<label for=dewalt">Dewalt</label>
 				</li>
 				<li>
-					<label for=hitachi">Hitachi</label>
 					<input type="checkbox" id="hitachi"  name="hitachi">
+					<label for=hitachi">Hitachi</label>
 				</li>
 			</ul>
 			<p>Питание:</p>
 			<ul>
 				<li>
-					<label for="battery">Акамуляторные</label>
 					<input type="radio" id="battery">
+					<label for="battery">Акамуляторные</label>
 				</li>
 				<li>
-					<label for="network">Сетевые</label>
 					<input type="radio" id="network">
+					<label for="network">Сетевые</label>
 				</li>
 			</ul>
 			<button type="button">Показать</button>
 		</form>
 	</section>
-
+	<div class="sort">
+		Сортировать:
+		<a href="#" class="filter-link">По цене</a>
+		<a href="#" class="filter-link">По типу</a>
+		<a href="#" class="filter-link">По функционалу</a>
+	</div>
 	<ul>
 		<li>
 			<div>
@@ -224,6 +233,20 @@
 			</div>
 		</li>
 	</ul>
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li><a href="#" class="next">следующая</a></li>
+	</ul>
+	<section class="some-words">
+		<h2> Пару слов о перфараторах </h2>
+		<p>
+			Перфоратор уникальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче и камне. Существуют электромеханические и пневмотические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор "трехрежимников"
+			в одном устройстве будут совмещены отбойный молоток и ударная дрель
+		</p>
+
+	</section>
 </main>
 <footer>
 <div>
