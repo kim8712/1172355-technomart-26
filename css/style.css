@@ -14,3 +14,190 @@ background-color:white;
 a{
 	text-decoration: none;
 }
+
+
+
+.main-header {
+
+	min-height:320px;
+}
+
+.main-navigation {
+	display:flex;
+	flex-direction:column;
+
+}
+
+.top-navigation-wraper {
+	width: 100%
+	min-height:40px;
+	background-color:#293449;
+}
+
+.main-navigation-wraper {
+	width: 100%
+	min-height:280px;
+	background-color:#f3f7f8;
+	padding-bottom: 55px;
+	padding-top:45px;
+}
+.top-navigation-wraper .content{
+	width: 940px;
+	margin: 0 auto;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.main-navigation-wraper .content{
+	width: 940px;
+	margin: 0 auto;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.content{
+	width: 940px;
+	margin: 0 auto;
+}
+ .logo img {
+ 	width:220px;
+
+}
+nav {
+	width: 100%;
+	background-color:#293449;
+	margin-top:40px; 
+}
+.midle-header {
+	width: 260px;
+}
+
+.title-midle-header {
+padding-left: 50px;
+padding-right:60px;
+color:red;
+font-style:italic;
+}
+.title-midle-heade h2{
+	font-size: 16px;
+}
+
+.slider{
+	margin: 45px 0;
+
+}
+
+.slider-item{
+
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+
+.item-block{
+	width: 300px;
+	background-color:#293449;
+}
+.item-right{
+	flex-grow: 1;
+	margin-left:20px;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.item-right div{
+	background-color:#293449;
+	min-height: 120px;
+}
+.slider img{
+	width: 620px;
+}
+
+.slider-item {
+	margin-top:20px;
+}
+.populat-title {
+flex-grow: 1;
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+
+}
+
+.populat-title h2{
+	flex-grow: 1;
+
+}
+.populat-title {
+	min-width:80px;
+	background-color:#f9f5f0;
+	padding: 0 25px;
+}
+
+
+
+.service {
+	display: flex;
+	flex-direction: column;
+	background-color: #f3f7f8;
+}
+.service-about {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.service img{
+	margin-left:-100px;
+}
+
+.service-description {
+
+	width: 450px;
+}
+
+
+
+.service-about div {
+	margin-left:70px;
+}
+.company-about{
+display: flex;
+	flex-direction: column;
+width: 530px;
+}
+.company-contacts{
+	width: 300px;
+}
+.about {
+display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+.bottom-nav {
+
+	background-color:#32425c;
+}
+.bottom-nav .content{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap:wrap;
+}
+.bottom-nav ul{
+min-width: 550px;
+}
+
+.social-nav {
+background-color: #293449;
+
+}
+.social-nav .content{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap:wrap;
+}
