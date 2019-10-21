@@ -40,16 +40,13 @@
 					</div>
 				</div>
 				<div class="midle-header">
-					<div class="regist-wrap">
-						<ul>
-							<li>
-								<a href="#" class="enter">Войти</a>
-							</li>
-							<li  class="enter-wrap">
-								<a href="#">Регистрация</a>
-							</li>
-						</ul>
+					<div>
+						<a href="#"class="login-info">Равшан Джамшутович</a>
 					</div>
+					<ul>
+						<li><a href="#">Мои заказы</a></li>
+						<li><span class="dote"></span></li>
+						<li><a href="#">Личный кабинет</a></li>
 				</div>
 			</div>
 			<div class="content">
@@ -79,14 +76,14 @@
 	<div class="title-catalog">
 	<h1>Перфораторы </h1>
 	</div>
-
+<div class="row">
 	<section class="left-block">
 		<form class="filtr" method="POST">
 			<p>Фильтр:</p>
 			<h3>Цена:</h3>
-			<p>
-			<input type="range" name="filtr">
-			</p>
+			<div class="indicator">
+			<div class="silver"><div class="green"></div></div>
+			</div>
 			<div class="cost-wrap">
 			<input type="text" name="cost1" class="cost"> <span>-</span> <input type="text" name="cost2" class="cost">
 
@@ -107,181 +104,246 @@
 					<label for="makita">Makita</label>
 				</li>
 					<li>
-					<input type="checkbox" id="borch"  name="borch" checked>
-					<label for="borch">Borch</label>
+					<input type="checkbox" id="dewalt"  name="dewalt" checked>
+					<label for="dewalt">Dewalt</label>
 				</li>
 				<li> 
-					<input type="checkbox" id="interskol"  name="interskol">
-					<label for="interskol">Интерсколk</label>
-				</li>
-				<li>
-					<input type="checkbox" id="makita"  name="makita">
-					<label for="makita">Makita</label>
-				</li>
-				<li>
-					<input type="checkbox" id="dewalt"  name="dewalt">
-					<label for=dewalt">Dewalt</label>
-				</li>
-				<li>
 					<input type="checkbox" id="hitachi"  name="hitachi">
-					<label for=hitachi">Hitachi</label>
+					<label for="hitachi">Hitachi</label>
 				</li>
 			</ul>
 			</div>
-			<p>Питание:</p>
-			<ul>
+			<h3>Питание:</h3>
+			<div class="energi-wrap">
+			<ul class="energi">
 				<li>
-					<input type="radio" id="battery">
+					<input type="radio" id="battery" name="ff">
 					<label for="battery">Акамуляторные</label>
 				</li>
 				<li>
-					<input type="radio" id="network">
+					<input type="radio" id="network"  name="ff">
 					<label for="network">Сетевые</label>
 				</li>
 			</ul>
+			</div>
 			<button type="button">Показать</button>
 		</form>
 	</section>
+<section class="right">
 	<div class="sort">
-		Сортировать:
-		<a href="#" class="filter-link">По цене</a>
-		<a href="#" class="filter-link">По типу</a>
-		<a href="#" class="filter-link">По функционалу</a>
+		<div>Сортировать:</div>
+		<ul>
+		<li><a href="#" class="filter-link">По цене</a></li>
+		<li><a href="#" class="filter-link">По типу</a></li>
+		<li><a href="#" class="filter-link">По функционалу</a></li>
+	</ul>
+	<div class="sort-nav">
+			<a href="#" class="sort-back" >Назад</a>
+			<a href="#" class="sort-forward">Вперед</a>
 	</div>
-	<ul>
+
+	</div>
+	<ul class="products-wrap">
 		<li>
-			<div>
-				<div>
-					<img src="img/Perforator-1.jpg" alt="">
-					<a href="#"><img src="https://via.placeholder.com/150x100" alt=""></a>
-					<a href="#">Купить</a>
-					<a href="#">В закладки</a>
-					<h3><a href="#">Перфоратор BORCH BFG 3000</a></h3>
+			<div class="products-item">
+				<div class="products-item-wrap">
+				<div class="products-item-img">
+					<img src="img/Perforator-3.jpg" alt="">
+				
+				<div class="products-item-button">
+					<a href="#" class="products-bay">Купить</a>
+					<a href="#" class="products-favorit">В закладки</a>
 				</div>
-				22500Р.
+				</div>
+					<div class="product-card">
+					<h3><a href="#">Перфоратор BORCH BFG 9000</a></h3>
+				
+				<p>22500Р.</p>
 				<span>15500р</span>
+				</div>
+			</div>
 			</div>
 		</li>
 		<li>
-			<div>
-				<div>
+			<div class="products-item">
+				<div class="products-item-wrap">
+				<div class="products-item-img">
 					<img src="img/Perforator-1.jpg" alt="">
-					<a href="#"><img src="https://via.placeholder.com/150x100" alt=""></a>
-					<a href="#">Купить</a>
-					<a href="#">В закладки</a>
-					<h3><a href="#">Перфоратор BORCH BFG 3000</a></h3>
+				
+				<div class="products-item-button">
+					<a href="#" class="products-bay">Купить</a>
+					<a href="#" class="products-favorit">В закладки</a>
 				</div>
-				22500Р.
+				</div>
+					<div class="product-card">
+					<h3><a href="#">Перфоратор BORCH BFG 3000</a></h3>
+				
+				<p>22500Р.</p>
 				<span>15500р</span>
+				</div>
+			</div>
 			</div>
 		</li>
 		<li>
-			<div>
-				<div>
-					<img src="img/Perforator-1.jpg" alt="">
-					<a href="#"><img src="https://via.placeholder.com/150x100" alt=""></a>
-					<a href="#">Купить</a>
-					<a href="#">В закладки</a>
-					<h3><a href="#">Перфоратор BORCH BFG 3000</a></h3>
-				</div>
-				22500Р.
-				<span>15500р</span>
-			</div>
-		</li>
-		<li>
-			<div>
-				<div>
+			<div class="products-item">
+				<div class="products-item-wrap">
+				<div class="products-item-img">
 					<img src="img/Perforator-2.jpg" alt="">
-					<a href="#"><img src="https://via.placeholder.com/150x100" alt=""></a>
-					<a href="#">Купить</a>
-					<a href="#">В закладки</a>
-					<h3><a href="#">Перфоратор BORCH BFG 3000</a></h3>
+				
+				<div class="products-item-button">
+					<a href="#" class="products-bay">Купить</a>
+					<a href="#" class="products-favorit">В закладки</a>
 				</div>
-				22500Р.
+				</div>
+					<div class="product-card">
+					<h3><a href="#">Перфоратор BORCH BFG 6000</a></h3>
+				
+				<p>22500Р.</p>
 				<span>15500р</span>
+				</div>
+			</div>
 			</div>
 		</li>
 		<li>
-			<div>
-				<div>
+			<div class="products-item">
+				<div class="products-item-wrap">
+				<div class="products-item-img">
+					<img src="img/Perforator-3.jpg" alt="">
+				
+				<div class="products-item-button">
+					<a href="#" class="products-bay">Купить</a>
+					<a href="#" class="products-favorit">В закладки</a>
+				</div>
+				</div>
+					<div class="product-card">
+					<h3><a href="#">Перфоратор BORCH BFG 9000</a></h3>
+				
+				<p>22500Р.</p>
+				<span>15500р</span>
+				</div>
+			</div>
+			</div>
+		</li>
+		<li>
+			<div class="products-item">
+				<div class="products-item-wrap">
+				<div class="products-item-img">
 					<img src="img/Perforator-1.jpg" alt="">
-					<a href="#"><img src="https://via.placeholder.com/150x100" alt=""></a>
-					<a href="#">Купить</a>
-					<a href="#">В закладки</a>
-					<h3><a href="#">Перфоратор BORCH BFG 3000</a></h3>
+				
+				<div class="products-item-button">
+					<a href="#" class="products-bay">Купить</a>
+					<a href="#" class="products-favorit">В закладки</a>
 				</div>
-				22500Р.
+				</div>
+					<div class="product-card">
+					<h3><a href="#">Перфоратор BORCH BFG 3000</a></h3>
+				
+				<p>22500Р.</p>
 				<span>15500р</span>
+				</div>
+			</div>
 			</div>
 		</li>
 		<li>
-			<div>
-				<div>
+			<div class="products-item">
+				<div class="products-item-wrap">
+				<div class="products-item-img">
 					<img src="img/Perforator-2.jpg" alt="">
-					<a href="#"><img src="https://via.placeholder.com/150x100" alt=""></a>
-					<a href="#">Купить</a>
-					<a href="#">В закладки</a>
-					<h3><a href="#">Перфоратор BORCH BFG 3000</a></h3>
+				
+				<div class="products-item-button">
+					<a href="#" class="products-bay">Купить</a>
+					<a href="#" class="products-favorit">В закладки</a>
 				</div>
-				22500Р.
+				</div>
+					<div class="product-card">
+					<h3><a href="#">Перфоратор BORCH BFG 6000</a></h3>
+				
+				<p>22500Р.</p>
 				<span>15500р</span>
+				</div>
+			</div>
+			</div>
+		</li>
+			<li>
+			<div class="products-item">
+				<div class="products-item-wrap">
+				<div class="products-item-img">
+					<img src="img/Perforator-3.jpg" alt="">
+				
+				<div class="products-item-button">
+					<a href="#" class="products-bay">Купить</a>
+					<a href="#" class="products-favorit">В закладки</a>
+				</div>
+				</div>
+					<div class="product-card">
+					<h3><a href="#">Перфоратор BORCH BFG 9000</a></h3>
+				
+				<p>22500Р.</p>
+				<span>15500р</span>
+				</div>
+			</div>
 			</div>
 		</li>
 		<li>
-			<div>
-				<div>
+			<div class="products-item">
+				<div class="products-item-wrap">
+				<div class="products-item-img">
 					<img src="img/Perforator-1.jpg" alt="">
-					<a href="#"><img src="https://via.placeholder.com/150x100" alt=""></a>
-					<a href="#">Купить</a>
-					<a href="#">В закладки</a>
-					<h3><a href="#">Перфоратор BORCH BFG 3000</a></h3>
+				
+				<div class="products-item-button">
+					<a href="#" class="products-bay">Купить</a>
+					<a href="#" class="products-favorit">В закладки</a>
 				</div>
-				22500Р.
+				</div>
+					<div class="product-card">
+					<h3><a href="#">Перфоратор BORCH BFG 3000</a></h3>
+				
+				<p>22500Р.</p>
 				<span>15500р</span>
+				</div>
+			</div>
 			</div>
 		</li>
 		<li>
-			<div>
-				<div>
+			<div class="products-item">
+				<div class="products-item-wrap">
+				<div class="products-item-img">
 					<img src="img/Perforator-2.jpg" alt="">
-					<a href="#"><img src="https://via.placeholder.com/150x100" alt=""></a>
-					<a href="#">Купить</a>
-					<a href="#">В закладки</a>
-					<h3><a href="#">Перфоратор BORCH BFG 3000</a></h3>
+				
+				<div class="products-item-button">
+					<a href="#" class="products-bay">Купить</a>
+					<a href="#" class="products-favorit">В закладки</a>
 				</div>
-				22500Р.
+				</div>
+					<div class="product-card">
+					<h3><a href="#">Перфоратор BORCH BFG 6000</a></h3>
+				
+				<p>22500Р.</p>
 				<span>15500р</span>
+				</div>
 			</div>
-		</li>
-		<li>
-			<div>
-				<div>
-					<img src="img/Perforator-1.jpg" alt="">
-					<a href="#"><img src="https://via.placeholder.com/150x100" alt=""></a>
-					<a href="#">Купить</a>
-					<a href="#">В закладки</a>
-					<h3><a href="#">Перфоратор BORCH BFG 3000</a></h3>
-				</div>
-				22500Р.
-				<span>15500р</span>
 			</div>
 		</li>
 	</ul>
-	<ul>
-		<li>1</li>
-		<li>2</li>
-		<li>3</li>
-		<li><a href="#" class="next">следующая</a></li>
+	<ul class="pagination">
+		<li><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li class="next"><a href="#" class="next">следующая</a></li>
 	</ul>
+</section>
+</div>
+</div>
 	<section class="some-words">
+		<div class="content">
 		<h2> Пару слов о перфараторах </h2>
 		<p>
 			Перфоратор уникальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче и камне. Существуют электромеханические и пневмотические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор "трехрежимников"
 			в одном устройстве будут совмещены отбойный молоток и ударная дрель
 		</p>
-
+		</div>
 	</section>
-</div>
+
 </main>
 <footer>
 <div>
@@ -321,13 +383,15 @@
 	</ul>
 </div>
 </footer>
-<div id="modal" class="visually-hidden">
-	<div class="ad_basket">
+<div id="modal" class="add">
+	<div class="add_basket">
 		<div class="close"></div>
-		<p>Товар добавлен в корзину</p>
-		<ul>
+		<p class="successful">Товар добавлен в корзину!</p>		
+	</div>
+	<div class="add_button_wrap">
+	<ul class="add_button">
 			<li><a href="#">Оформить заказ</a></li>
-			<li><a href="#">Продолжить покупки</a></li>
+			<li><a href="#" class="continium">Продолжить покупки</a></li>
 		</ul>
 	</div>
 </div>
