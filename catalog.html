@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Техномарт</title>
-	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i7cPT+Sans:400,400i,700&display=swap&subset=cyrillic" >
+	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -11,12 +12,12 @@
 	<div class="main-navigation">
 		<div class="top-navigation-wraper">
 			<div class="content">
-				<a href="index.html" class="logo"><img src="img/logo-technomart.svg" alt="">
+				<a href="index.html" class="logo"><img src="img/logo-technomart.svg" alt="" width="135" height="21">
 				</a>
 				<div>
-					<form class="search">
+					<form class="search" method="POST" action="#">
 						<input type="text" name="search" placeholder="Поиск:">
-						<button type="button">Поиск</button>
+						<button type="submit">Поиск</button>
 					</form>
 				</div>
 				<div class="order-wrap">
@@ -35,13 +36,14 @@
 				</div>
 				<div class="adress midle-header">
 					<div class="adress-wrap">
-						<a href="#" class="adress-tel">7 (812) 555-05-55</a>
+						<a href="tel:+78125550555" class="adress-tel">7 (812) 555-05-55</a>
 						<p>г.Санкт-Петербург. ул.Б.Конюшная, д 19/8</p>
 					</div>
 				</div>
 				<div class="midle-header">
 					<div class="login-info-wrap">
-						<a href="#" class="login-info">Равшан Джамшутович</a>
+						<div class="user"><a href="#" class="login-info">Равшан Джамшутович</a></div>
+						<div class="outuser"><a href="#"  class="login-logout"></a></div>
 					</div>
 					<ul class="kabinet">
 						<li><a href="#" class="my-order" >Мои заказы</a></li>
@@ -54,12 +56,12 @@
 				<nav>
 					<ul>
 						<li><a href="index.html">Главная</a></li>
-						<li><a href="">Компания</a></li>
-						<li><a href="catalog.html">Каталог</a></li>
-						<li><a href="">Новости</a></li>
-						<li><a href="">Спецпредложения</a></li>
-						<li><a href="">Доставка</a></li>
-						<li><a href="">Контакты</a></li>
+						<li><a href="#">Компания</a></li>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Спецпредложения</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Контакты</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -69,8 +71,8 @@
 <main>
 	<div class="content">
 		<ul class="breadcrums">
-			<li><a href=index.html.html> <img src="img/icon-home.svg" alt=""></a> </li>
-			<li><a href=catalog.html>Каталог</a> </li>
+			<li class="home"><a href=index.html>Home</a> </li>
+			<li><a href="#">Каталог</a> </li>
 			<li><a href="#">Инструмент </a> </li>
 			<li> Перфораторы </li>
 		</ul>
@@ -79,7 +81,7 @@
 		</div>
 		<div class="row">
 			<section class="left-block">
-				<form class="filtr" method="POST">
+				<form class="filtr" method="POST" action="#">
 					<p>Фильтр:</p>
 					<h3>Цена:</h3>
 					<div class="indicator">
@@ -92,23 +94,23 @@
 					<div class="firm-wrap">
 						<ul class="firm">
 							<li>
-								<input type="checkbox" id="borch"  name="borch" checked>
+								<input type="checkbox" id="borch"  value="borch"   name="firm" checked>
 								<label for="borch">Bosch</label>
 							</li>
 							<li> 
-								<input type="checkbox" id="interskol"  name="interskol">
+								<input type="checkbox" id="interskol"  value="interskol"  name="firm">
 								<label for="interskol">Интерскол</label>
 							</li>
 							<li>
-								<input type="checkbox" id="makita"  name="makita">
+								<input type="checkbox" id="makita"  value="makita"  name="firm">
 								<label for="makita">Makita</label>
 							</li>
 							<li>
-								<input type="checkbox" id="dewalt"  name="dewalt" checked>
+								<input type="checkbox" id="dewalt"  value="dewalt"  name="firm" checked>
 								<label for="dewalt">Dewalt</label>
 							</li>
 							<li> 
-								<input type="checkbox" id="hitachi"  name="hitachi">
+								<input type="checkbox" id="hitachi"  value="hitachi" name="firm">
 								<label for="hitachi">Hitachi</label>
 							</li>
 						</ul>
@@ -117,16 +119,16 @@
 					<div class="energi-wrap">
 						<ul class="energi">
 							<li>
-								<input type="radio" id="battery" name="ff">
+								<input type="radio" id="battery" value="battery" name="energi">
 								<label for="battery">Акамуляторные</label>
 							</li>
 							<li>
-								<input type="radio" id="network"  name="ff">
+								<input type="radio" id="network"  value="network" name="energi">
 								<label for="network">Сетевые</label>
 							</li>
 						</ul>
 					</div>
-					<button type="button">Показать</button>
+					<button type="submit">Показать</button>
 				</form>
 			</section>
 			<section class="right">
@@ -147,9 +149,9 @@
 						<div class="products-item">
 							<div class="products-item-wrap">
 								<div class="products-item-img">
-									<img src="img/Perforator-1.jpg" alt="">
+									<img src="img/perforator-1.jpg" alt="перфоратор"  width="218" height="170">
 									<div class="products-item-button">
-										<a href="#" class="products-bay">Купить</a>
+										<a href="#" class="products-bay button1" >Купить</a>
 										<a href="#" class="products-favorit">В закладки</a>
 									</div>
 								</div>
@@ -165,9 +167,9 @@
 						<div class="products-item">
 							<div class="products-item-wrap">
 								<div class="products-item-img">
-									<img src="img/Perforator-2.jpg" alt="">
+									<img src="img/perforator-2.jpg" alt="перфоратор"  width="218" height="170">
 									<div class="products-item-button">
-										<a href="#" class="products-bay">Купить</a>
+										<a href="#" class="products-bay button1"  >Купить</a>
 										<a href="#" class="products-favorit">В закладки</a>
 									</div>
 								</div>
@@ -182,11 +184,11 @@
 					<li>
 						<div class="products-item">
 							<div class="products-item-wrap">
-								<span class="new"><a href="#"><img src="img/new.png" alt=""></a></span>
+								<span class="new"><img src="img/new.png" width="60" height="59" alt="новинка"></span>
 								<div class="products-item-img">
-									<img src="img/Perforator-1.jpg" alt="">
+									<img src="img/perforator-1.jpg" width="218" height="170" alt="перфоратор">
 									<div class="products-item-button">
-										<a href="#" class="products-bay">Купить</a>
+										<a href="#" class="products-bay button1" >Купить</a>
 										<a href="#" class="products-favorit">В закладки</a>
 									</div>
 								</div>
@@ -202,9 +204,9 @@
 						<div class="products-item">
 							<div class="products-item-wrap">
 								<div class="products-item-img">
-									<img src="img/Perforator-1.jpg" alt="">
+									<img src="img/perforator-1.jpg" alt="перфоратор"  width="218" height="170">
 									<div class="products-item-button">
-										<a href="#" class="products-bay">Купить</a>
+										<a href="#" class="products-bay button1" >Купить</a>
 										<a href="#" class="products-favorit">В закладки</a>
 									</div>
 								</div>
@@ -220,9 +222,9 @@
 						<div class="products-item">
 							<div class="products-item-wrap">
 								<div class="products-item-img">
-									<img src="img/Perforator-2.jpg" alt="">
+									<img src="img/perforator-2.jpg" alt="перфоратор"  width="218" height="170">
 									<div class="products-item-button">
-										<a href="#" class="products-bay">Купить</a>
+										<a href="#" class="products-bay button1" >Купить</a>
 										<a href="#" class="products-favorit">В закладки</a>
 									</div>
 								</div>
@@ -238,9 +240,9 @@
 						<div class="products-item">
 							<div class="products-item-wrap">
 								<div class="products-item-img">
-									<img src="img/Perforator-1.jpg" alt="">
+									<img src="img/perforator-1.jpg" alt="перфоратор"  width="218" height="170">
 									<div class="products-item-button">
-										<a href="#" class="products-bay">Купить</a>
+										<a href="#" class="products-bay button1">Купить</a>
 										<a href="#" class="products-favorit">В закладки</a>
 									</div>
 								</div>
@@ -255,11 +257,11 @@
 					<li>
 						<div class="products-item">
 							<div class="products-item-wrap">
-								<span class="new"><a href="#"><img src="img/new.png" alt=""></a></span>
+								<span class="new"><img src="img/new.png" alt="перфоратор"  width="60" height="59"></span>
 								<div class="products-item-img">
-									<img src="img/Perforator-1.jpg" alt="">
+									<img src="img/perforator-1.jpg" alt="">
 									<div class="products-item-button">
-										<a href="#" class="products-bay">Купить</a>
+										<a href="#" class="products-bay button1">Купить</a>
 										<a href="#" class="products-favorit">В закладки</a>
 									</div>
 								</div>
@@ -275,9 +277,9 @@
 						<div class="products-item">
 							<div class="products-item-wrap">
 								<div class="products-item-img">
-									<img src="img/Perforator-2.jpg" alt="">
+									<img src="img/perforator-2.jpg" alt="перфоратор"  width="218" height="170">
 									<div class="products-item-button">
-										<a href="#" class="products-bay">Купить</a>
+										<a href="#" class="products-bay button1" >Купить</a>
 										<a href="#" class="products-favorit">В закладки</a>
 									</div>
 								</div>
@@ -293,9 +295,9 @@
 						<div class="products-item">
 							<div class="products-item-wrap">
 								<div class="products-item-img">
-									<img src="img/Perforator-1.jpg" alt="">
+									<img src="img/perforator-1.jpg" alt="перфоратор"  width="218" height="170">
 									<div class="products-item-button">
-										<a href="#" class="products-bay">Купить</a>
+										<a href="#" class="products-bay button1"  >Купить</a>
 										<a href="#" class="products-favorit">В закладки</a>
 									</div>
 								</div>
@@ -330,23 +332,23 @@
 <footer>
 	<div class="bottom-nav">
 		<div class="content">
-			<a href="index.html" class="logo"><img src="img/logo-technomart.svg" alt=""></a>
+			<a href="index.html" class="logo"><img src="img/logo-technomart.svg" alt="техномарт"  width="135" height="21"></a>
 			<ul>
 				<li><a href="index.html">Компания</a></li>
-				<li><a href="">Новости</a></li>
-				<li><a href="catalog.html">Каталог</a></li>
-				<li><a href="">Доставка</a></li>
-				<li><a href="">Контакты</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Контакты</a></li>
 			</ul>
 			<p>
 			г. Санкт-Петербург, ул. Б. Конюшенная, д 19/8
 			7(812)555-05-55
 			</p>
 			<ul class="bottom-menu">
-				<li><a href="">Материалы</a></li>
-				<li><a href="">Техника</a></li>
-				<li><a href="">Инструмент</a></li>
-				<li><a href="">Спецпредложения</a></li>
+				<li><a href="#">Материалы</a></li>
+				<li><a href="#">Техника</a></li>
+				<li><a href="#">Инструмент</a></li>
+				<li><a href="#">Спецпредложения</a></li>
 			</ul>
 		</div>
 	</div>
@@ -357,20 +359,21 @@
 				Все права защишены</p>
 			</div>
 			<ul class="social-icon">
-				<li><a href="#"><img src="img/icon-vk.svg" alt="VK"></a></li>
-				<li><a href="#"><img src="img/icon-fb.svg" alt="FACEBOOK"></a></li>
-				<li><a href="#"><img src="img/icon-insta.svg" alt="INSTAGRAM"></a></li>
+				<li><a href="#"><img src="img/icon-vk.svg" alt="VK"  width="26" height="15"></a></li>
+				<li><a href="#"><img src="img/icon-fb.svg" alt="FACEBOOK" width="26" height="15"></a></li>
+				<li><a href="#"><img src="img/icon-insta.svg" alt="INSTAGRAM" width="26" height="15"></a></li>
 			</ul>
 			<ul class="mail">
-				<li class="callback"><p>Обратная связь: <a>mail@htmlacademy.ru</a></p></li>
+				<li class="callback"><p>Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p></li>
 				<li><p>Разработано -</p><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></li>
 			</ul>
 		</div>
 	</div>
 </footer>
+
 <div id="modal" class="add">
 	<div class="add_basket">
-		<div class="close"></div>
+		<div class="close "></div>
 		<p class="successful">Товар добавлен в корзину!</p>		
 	</div>
 	<div class="add_button_wrap">
@@ -380,6 +383,8 @@
 		</ul>
 	</div>
 </div>
-
+<div id="mylink"></div>
+<div id="modal-map"></div>
+<script src="js/external.js"></script>
 </body>
 </html>

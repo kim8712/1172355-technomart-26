@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Техномарт</title>
-	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i7сPT+Sans:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -11,12 +12,12 @@
 	<div class="main-navigation">
 		<div class="top-navigation-wraper">
 			<div class="content">
-				<a href="index.html" class="logo"><img src="img/logo-technomart.svg" alt="">
+				<a href="#" class="logo"><img src="img/logo-technomart.svg" alt="" width="135" height="21">
 				</a>
 				<div class="search-wrap">
-					<form class="search">
+					<form class="search" method="POST" action="#">
 						<input type="text" name="search" placeholder="Поиск:">
-						<button type="button">Поиск</button>
+						<button type="submit">Поиск</button>
 					</form>
 				</div>
 				<div class="order-wrap">
@@ -35,7 +36,7 @@
 				</div>
 				<div class="adress midle-header">
 					<div class="adress-wrap">
-						<a href="#" class="adress-tel">7(812)555-05-55</a>
+						<a href="tel:+78125550555" class="adress-tel">7(812)555-05-55</a>
 						<p>г.Санкт-Петербург. ул.Б.Конюшная, д 19/8</p>
 					</div>
 				</div>
@@ -55,13 +56,13 @@
 			<div class="content">
 				<nav>
 					<ul>
-						<li><a href="index.html">Главная</a></li>
-						<li><a href="">Компания</a></li>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Компания</a></li>
 						<li><a href="catalog.html">Каталог</a></li>
-						<li><a href="">Новости</a></li>
-						<li><a href="">Спецпредложения</a></li>
-						<li><a href="">Доставка</a></li>
-						<li><a href="">Контакты</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Спецпредложения</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Контакты</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -73,7 +74,7 @@
 		<section class="slider">
 			<div class="slider-item">
 				<div class="item-block block1">
-					<span class="new-item"><a href="#"><img src="img/new.png" alt=""></a></span>
+					<span class="new-item"><img src="img/new.png" width="60" height="59" alt="новый"></span>
 					<div class="item-content">
 						<h3>Материалы </h3>
 						<a href="#" class="item-link">на любой вкус</a>
@@ -91,26 +92,24 @@
 				</div>
 			</div>
 			<div class="slider-item">
-				<div class="slider1 slide-nav">
-					<div class="slider-content">
-						<div class="indicator1"></div>
-						<div class="indicator2"></div>
-						<button class="slide-back">Назад</button>
-						<button class="slide-forward">Вперед</button>
-						<h3>Дрели</h3>
-						<p>Соседям на радость!</p>
-						<a href="#" class="button">Открыть каталог</a>
+				<div class="slide-nav ">
+					<div class="indicator1"></div>
+					<div class="indicator2"></div>
+					<button class="slide-back">Назад</button>
+					<button class="slide-forward">Вперед</button>
+					<div class="slider1"  >
+						<div class="slider-content">
+							<h3>Дрели</h3>
+							<p>Соседям на радость!</p>
+							<a href="catalog.html" class="button">Открыть каталог</a>
+						</div>
 					</div>
-				</div>
-				<div class="slider2 slide-nav">
-					<div class="slider-content">
-						<div class="indicator1"></div>
-						<div class="indicator2"></div>
-						<button class="slide-back">Назад</button>
-						<button class="slide-forward">Вперед</button>
-						<h3>Перфораторы</h3>
-						<p>Настоящие мужские игрушки</p>
-						<a href="#" class="button">Открыть каталог</a>
+					<div class="slider2" >
+						<div class="slider-content">
+							<h3>Перфораторы</h3>
+							<p>Настоящие мужские игрушки</p>
+							<a href="catalog.html" class="button">Открыть каталог</a>
+						</div>
 					</div>
 				</div>
 				<div class="item-right">
@@ -132,18 +131,17 @@
 
 		<section class=".popular-products">
 			<div class="populat-title">
-				<h2>Популярные товары:</h2> <a href="#"  class="button">Все популярные товары</a>
+				<h2>Популярные товары:</h2> <a href="catalog.html"  class="button">Все популярные товары</a>
 			</div>
 			<ul class="products-wrap">
 				<li>
 					<div class="products-item">
 						<div class="products-item-wrap">
 						<div class="products-item-img">
-							<img src="img/Perforator-3.jpg" alt="">
-						
+							<img src="img/perforator-3.jpg" alt="перфоратор"   width="218" height="170">
 						<div class="products-item-button">
-							<a href="#" class="products-bay">Купить</a>
-							<a href="#" class="products-favorit">В закладки</a>
+							<a href="#" class="products-bay button1">Купить</a>
+							<a href="#" class="products-favorit" >В закладки</a>
 						</div>
 						</div>
 							<div class="product-card">
@@ -159,10 +157,10 @@
 					<div class="products-item">
 						<div class="products-item-wrap">
 						<div class="products-item-img">
-							<img src="img/Perforator-1.jpg" alt="">
+							<img src="img/perforator-1.jpg"  alt="перфоратор"  width="218" height="170">
 						
 						<div class="products-item-button">
-							<a href="#" class="products-bay">Купить</a>
+							<a href="#" class="products-bay button1">Купить</a>
 							<a href="#" class="products-favorit">В закладки</a>
 						</div>
 						</div>
@@ -179,10 +177,10 @@
 					<div class="products-item">
 						<div class="products-item-wrap">
 						<div class="products-item-img">
-							<img src="img/Perforator-2.jpg" alt="">
+							<img src="img/perforator-2.jpg"  alt="перфоратор"  width="218" height="170">
 						
 						<div class="products-item-button">
-							<a href="#" class="products-bay">Купить</a>
+							<a href="#" class="products-bay button1" >Купить</a>
 							<a href="#" class="products-favorit">В закладки</a>
 						</div>
 						</div>
@@ -197,12 +195,12 @@
 				<li>
 					<div class="products-item">
 						<div class="products-item-wrap">
-						<span class="new"><a href="#"><img src="img/new.png" alt=""></a></span>
+						<span class="new"><img src="img/new.png"  alt="перфоратор"  width="60" height="59"></span>
 						<div class="products-item-img">
-							<img src="img/Perforator-1.jpg" alt="">
+							<img src="img/perforator-1.jpg"  alt="перфоратор"  width="218" height="170">
 						
 						<div class="products-item-button">
-							<a href="#" class="products-bay">Купить</a>
+							<a href="#" class="products-bay button1">Купить</a>
 							<a href="#" class="products-favorit">В закладки</a>
 						</div>
 						</div>
@@ -222,26 +220,26 @@
 			</div>
 			<ul class="products-wrap">
 				<li>
-					<div class="products-item"><a href="#"><img src="img/bosch.png" class="trailer" alt=""></a>
+					<div class="products-item"><a href="#"><img src="img/bosch.png" class="trailer"  alt="bosch" width="123" height="40"></a>
 					</div>
 				</li>
-				<li><div class="products-item"><a href="#"><img src="img/makita.png" class="trailer" alt=""></a></div></li>
-				<li><div class="products-item"><a href="#"><img src="img/deWALT.png" class="trailer" alt=""></a>
+				<li><div class="products-item"><a href="#"><img src="img/makita.png" class="trailer" alt="makita" width="123" height="40"></a></div></li>
+				<li><div class="products-item"><a href="#"><img src="img/dewalt.png" class="trailer" alt="dewalt" width="123" height="40"></a>
 				</div>
 				</li>
-				<li><div class="products-item"><a href="#"><img src="img/interskol.png" class="trailer" alt=""></a>
+				<li><div class="products-item"><a href="#"><img src="img/interskol.png" class="trailer" alt="interskol" width="123" height="40"></a>
 				</div>
 				</li>
-				<li><div class="products-item"><a href="#"><img src="img/hitachi.png" class="trailer" alt=""></a>
+				<li><div class="products-item"><a href="#"><img src="img/hitachi.png" class="trailer" alt="hitachi" width="123" height="40"></a>
 				</div>
 				</li>
-					<li><div class="products-item"><a href="#"><img src="img/LG.png" class="trailer" alt=""></a>
+					<li><div class="products-item"><a href="#"><img src="img/lg.png" class="trailer" alt="lg" width="123" height="40"></a>
 					</div>
 				</li>
-					<li><div class="products-item"><a href="#"><img src="img/aeg.png" class="trailer" alt=""></a>
+					<li><div class="products-item"><a href="#"><img src="img/aeg.png" class="trailer" alt="aeg" width="123" height="40"></a>
 					</div>
 				</li>
-					<li><div class="products-item"><a href="#"><img src="img/metabo.png" class="trailer" alt=""></a>
+					<li><div class="products-item"><a href="#"><img src="img/metabo.png" class="trailer" alt="metabo" width="123" height="40"></a>
 					</div>
 				</li>
 			</ul>
@@ -259,12 +257,12 @@
 					<li>Гарантия</li>
 					<li>Кредит</li>
 				</ul>
-				<div class="tab1">
+				<div class="tab1 tabs-panel active">
 					<h4>Доставка</h4>
 					<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br>поднимаяя это на ваш этаж!
 					</p>
 				</div>
-				<div class="tab2">
+				<div class="tab2 tabs-panel">
 					<h4>Гарантия</h4>
 					<p>Если купленный у нас товар поломается или заискрит<br> 
 						а также в случае пожара, спровоцированого его возгоранием,<br>
@@ -273,7 +271,7 @@
 						Дом уж востановите как нибуть сами.
 					</p>
 				</div>
-				<div class="tab3">
+				<div class="tab3 tabs-panel ">
 					<h4>Кредит</h4>
 					<p>Залезть в долговую яму стало проще!<br>
 						Кредитные консультанты придут вам на помощь.<br>
@@ -297,15 +295,15 @@
 						<li>Автотрейдинг</li>
 						<li>ЖелДорЭкспедиция</li>
 					</ul>
-					<a href="" class="button" >Подробнее о компании</a>
+					<a href="#" class="button" >Подробнее о компании</a>
 				</div>
 			</section>
 			<section class="company-contacts">
 				<h2>Контакты</h2>
 				<p>Вы иожете щабрать товар сами,<br>заехав к нам в офис:</p>
 				<div>
-					<img src="img/map.jpg" alt="">
-					<a href="#" class="button"> Заблудились? напишите нам!</a>
+					<a href="#" id="modal-map"><img src="img/map.jpg" alt=""></a>
+					<a href="#" id="mylink" class="button"> Заблудились? напишите нам!</a>
 				</div>
 
 			</section>
@@ -315,23 +313,23 @@
 <footer>
 	<div class="bottom-nav">
 		<div class="content">
-			<a href="index.html" class="logo"><img src="img/logo-technomart.svg" alt=""></a>
+			<a href="index.html" class="logo"><img src="img/logo-technomart.svg" alt="" width="135" height="21" ></a>
 			<ul>
-				<li><a href="index.html">Компания</a></li>
-				<li><a href="">Новости</a></li>
+				<li><a href="#">Компания</a></li>
+				<li><a href="#">Новости</a></li>
 				<li><a href="catalog.html">Каталог</a></li>
-				<li><a href="">Доставка</a></li>
-				<li><a href="">Контакты</a></li>
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Контакты</a></li>
 			</ul>
 			<p>
 			г. Санкт-Петербург, ул. Б. Конюшенная, д 19/8
 			7(812)555-05-55
 			</p>
 			<ul class="bottom-menu">
-				<li><a href="">Материалы</a></li>
-				<li><a href="">Техника</a></li>
-				<li><a href="">Инструмент</a></li>
-				<li><a href="">Спецпредложения</a></li>
+				<li><a href="#">Материалы</a></li>
+				<li><a href="#">Техника</a></li>
+				<li><a href="#">Инструмент</a></li>
+				<li><a href="#">Спецпредложения</a></li>
 			</ul>
 		</div>
 	</div>
@@ -342,12 +340,12 @@
 				Все права защишены</p>
 			</div>
 			<ul class="social-icon">
-				<li><a href="#"><img src="img/icon-vk.svg" alt="VK"></a></li>
-				<li><a href="#"><img src="img/icon-fb.svg" alt="FACEBOOK"></a></li>
-				<li><a href="#"><img src="img/icon-insta.svg" alt="INSTAGRAM"></a></li>
+				<li><a href="#"><img src="img/icon-vk.svg" alt="VK" width="26" height="15"></a></li>
+				<li><a href="#"><img src="img/icon-fb.svg" alt="FACEBOOK" width="26" height="15"></a></li>
+				<li><a href="#"><img src="img/icon-insta.svg" alt="INSTAGRAM" width="26" height="15"></a></li>
 			</ul>
 			<ul class="mail">
-				<li class="callback"><p>Обратная связь: <a>mail@htmlacademy.ru</a></p></li>
+				<li class="callback"><p>Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p></li>
 				<li><p>Разработано -</p><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></li>
 			</ul>
 		</div>
@@ -357,7 +355,7 @@
 	<form class="message-form" method="POST" action="#">
 		
 		<div class="modal-wrap">
-			<div class="close"></div>
+			<div class="close btn-close"></div>
 			<ul class="modal-form">
 				<li>
 					<label for="name">Имя:</label><br/>
@@ -365,7 +363,7 @@
 				</li>
 				<li>
 					<label for="mail">Ваш email:</label><br/>
-					<input type="text" id="mail" placeholder="email@example.com">
+					<input type="email" id="mail" placeholder="email@example.com">
 				</li>
 				<li class="modal-textarea">
 					<label for="textarea">Текст письма</label><br/>
@@ -379,8 +377,21 @@
 	</form>
 </div>
 <div id="modal3" class="map" >
-	<a href="https://yandex.ru/maps/">Яндекс</a>
-	<div class="close"></div>
+	<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5467adabb4f2f79c8d6320f4c2b0aa3c4ed48cce8cf8d1a37c2af4f62c665f03&amp;source=constructor" width="940" height="450" style="border:0;"></iframe>
+	<div class="close map-close"></div>
 </div>
+<div id="modal" class="add">
+	<div class="add_basket">
+		<div class="close gg"></div>
+		<p class="successful">Товар добавлен в корзину!</p>		
+	</div>
+	<div class="add_button_wrap">
+		<ul class="add_button">
+			<li><a href="#">Оформить заказ</a></li>
+			<li><a href="#" class="continium">Продолжить покупки</a></li>
+		</ul>
+	</div>
+</div>
+<script src="js/external.js"></script>
 </body>
 </html>
